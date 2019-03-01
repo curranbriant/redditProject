@@ -10,4 +10,4 @@ app.use(methodOverride('_method'))
 app.use(express.static("public"));
 app.use(require('./routes/index.js'))
 
-app.listen(2000, () => console.log('listenting on port 2000'))
+app.listen(4000, () => console.log('listenting on port 4000'))
