@@ -10,4 +10,8 @@ app.use(methodOverride('_method'))
 app.use(express.static("public"));
 app.use(require('./routes/index.js'))
 
-app.listen(4000, () => console.log('listenting on port 4000'))
+app.set('port', process.env.PORT || 3001)
+
+app.listen(app.get('port'), () => {
+    console.log(`✅ PORT: ${app.get('port')} 🌟`)
+})
