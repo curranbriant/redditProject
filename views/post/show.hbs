@@ -4,9 +4,45 @@
     <a href= 'https://{{post.link}}' target="_blank" class="userLink">
     {{post.title}}
     </a>
-</div>
+</p>
 </div>
 
+
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">
+          {{ content }}
+        </span>
+      </div>
+      </div>
+
+{{#each comments}}
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">
+          {{ content }}
+        </span>
+      </div>
+      <div class="card-action">
+        <a href="/user/{{ author.id }}" class="">{{ author.local.email }}</a>
+        <span class="tweet__date">{{ createdAt }}</span>
+      </div>
+    </div>
+  {{/each}}
+<div class="card">
+  <div class="card-content">
+    <h4 class="card-title">Add a comment:</h6>
+    <form method="POST" action="/post/{{id}}?_method=POST class="post-form">
+      <p class="input-field inline col s10">
+        <label for="content"></label>
+        <input type="text" name="content" id="">
+      </p>
+      <p class="input-field inline col s2">
+        <input class="btn" type="submit" value="Submit">
+      </p>
+    </form>
+  </div>
+</div>
 <div>
     <a href='/post/{{post.id}}/edit'>Edit</a>
     <form action='/post/{{post.id}}?_method=DELETE' method='post'>

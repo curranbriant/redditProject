@@ -1,4 +1,4 @@
-const { Post }  = require('../models/index')
+const { Post, Comment }  = require('../models/index')
 
 module.exports = {
     new: function(req, res) {
@@ -30,7 +30,8 @@ module.exports = {
           req.params.id,
           {
             title,
-            link
+            link,
+            Comment
           },
           {
             runValidators: true

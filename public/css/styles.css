@@ -7,19 +7,22 @@
   }
   
 
-  .card, .btn, .form-control { border-radius: 0; }
+  .card, .btn, .form-control { border-radius: 2px;
+  align-content: center;
+  }
 
   .navbar-dark .navbar-nav .nav-link {
     color: silver;
   }
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i{
-  background-color: black;
+  background-color: rgb(48, 97, 114);
 }
   .userLink{
     color: black;
     text-decoration: none;
     max-width: 100%;
       font-size: 80px;
+      
 
   }
 
@@ -28,6 +31,14 @@
   }
 a {
   color: black;
+  text-decoration: none;
+  max-width: 100%;
+
+
+}
+
+div.card{
+  color: lightblue;
   text-decoration: none;
   max-width: 100%;
     font-size: 50px;

@@ -1,9 +1,14 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const Post = new Schema({
-    title: String,
-    link: String
+const Comment = new Schema({
+    content: String,
 })
 
-module.exports = Post
+const Post = new Schema({
+    title: String,
+    link: String,
+    comments: [Comment]
+})
+
+module.exports = Post, Comment
