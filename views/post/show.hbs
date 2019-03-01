@@ -1,0 +1,13 @@
+
+<div>
+    <a href= 'https://www.{{post.link}}' target="_blank" class="userLink">
+    {{post.title}}
+    </a>
+</div>
+
+<div>
+    <a href='/post/{{post.id}}/edit'>Edit</a>
+    <form action='/post/{{post.id}}?_method=DELETE' method='post'>
+        <input type='submit' value='Delete'>
+    </form>
+</div>
