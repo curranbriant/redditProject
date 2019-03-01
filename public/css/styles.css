@@ -19,10 +19,16 @@
     color: black;
     text-decoration: none;
     max-width: 100%;
-      font-size: 50px;
+      font-size: 80px;
 
   }
 
   .new-post{
       font-size: 40px;
   }
+a {
+  color: black;
+  text-decoration: none;
+  max-width: 100%;
+    font-size: 50px;
+}
