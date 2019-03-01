@@ -1,0 +1,28 @@
+.nav-wrapper {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  
+    
+  }
+  
+
+  .card, .btn, .form-control { border-radius: 0; }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: silver;
+  }
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i{
+  background-color: black;
+}
+  .userLink{
+    color: black;
+    text-decoration: none;
+    max-width: 100%;
+      font-size: 50px;
+
+  }
+
+  .new-post{
+      font-size: 40px;
+  }
