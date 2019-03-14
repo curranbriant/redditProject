@@ -4,27 +4,27 @@ const { Comment } = require("../models/index");
 Post.remove({}).then(() => {
   Post.insertMany([
     {
-      title: "asdfasd?",
+      title: "Google to sell self driving Car subsidary",
       url:
         ",",
         comments: [
-        { content: "asdf!!" },
-        { content: "asdf" }
+        { content: "Nice!!" },
+        { content: "Waste of money" }
       ]
     },
     {
-      title: "New company",
+      title: "New company IPOs",
       url:
         "google.com",
         comments: [
-        { content: "asdf" },
-        { content: "asdf?" }
+        { content: "sell sell sell" },
+        { content: "I'm buying!" }
       ]
     },
     {
-      title: "asdf",
+      title: "The Dot com bubble will repeat itself",
       url: "asdf.sadf",
-      comments: [{ content: "asdf" }]
+      comments: [{ content: "True" }]
     }
   ]).then(posts => {
     console.log("#", posts);
